@@ -1,7 +1,23 @@
 (function(){
     var modules={
+        "adverse-event-data":		    {url:"$A/modules/c/cansleep/tasks/adverse-event-data.html",Table:"91000635",form_module:"adverse-event-form"},
+        "adverse-event-form":		    {url:"$A/modules/c/cansleep/tasks/adverse-event-form.html",Table:"91000635"},
+        
+        "concomitant-medication-data":	{url:"$A/modules/c/cansleep/tasks/concomitant-medication-data.html",Table:"91000636",form_module:"concomitant-medication-form"},
+        "concomitant-medication-form":	{url:"$A/modules/c/cansleep/tasks/concomitant-medication-form.html",Table:"91000636"},
+        
         "s-visit-date-data":		    {url:"$A/modules/c/cansleep/tasks/visit-date-data.html",Table:"91000631",form_module:"s-visit-date-form"},
         "s-visit-date-form":		    {url:"$A/modules/c/cansleep/tasks/visit-date-form.html",Table:"91000631"},
+        
+        "s-anthropometry-data":		    {url:"$A/modules/c/cansleep/tasks/anthropometry-data.html",Table:"91000632",form_module:"s-anthropometry-form"},
+        "s-anthropometry-form":		    {url:"$A/modules/c/cansleep/tasks/anthropometry-form.html",Table:"91000632",task_name:"Anthropometry"},
+        
+        "s-isi-data":		            {url:"$A/modules/c/cansleep/tasks/insomnia-severity-index-data.html",Table:"91000633",form_module:"s-isi-form"},
+        "s-isi-form":		            {url:"$A/modules/c/cansleep/tasks/insomnia-severity-index-form.html",Table:"91000633",task_name:"Insomnia severity index"},
+
+        "s-actigraphy-data":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-data.html",Table:"91000634",form_module:"s-actigraphy-form"},
+        "s-actigraphy-form":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-form.html",Table:"91000634"},
+        
         /*
         "anthropometry-data":		    {url:"$A/modules/c/cansleep/task/anthropometry-data.html",Table:"anthropometry",form_module:"anthropometry-form"},
         "anthropometry-form":		    {url:"$A/modules/c/cansleep/task/anthropometry-form.html",Table:"anthropometry"},
