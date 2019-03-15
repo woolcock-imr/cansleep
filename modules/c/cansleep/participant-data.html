@@ -7,10 +7,10 @@
             //-------------------------------------
             VmInclude:__COMPONENT__/g/grid.01.js       
             //-------------------------------------
-            var fields="Participant ID|UID,Subject_ID,Screening_Number,Subject_Initials,Gender,DOB,_Data_Entry,_Setup,_Quest,_Login_ID,_Password";
+            var fields="Participant ID|UID,Subject_ID,Screening_Number,Subject_Initials,Gender,DOB,_Data_Entry,_Login_ID,_Password"; //,_Setup,_Quest
             m.fields="_Form,"+fields+",Submit_date,Submitted_by,_Delete";
+            m.fields_e="Participant_ID|UID,Subject_ID,Screening_Number,Subject_Initials,Gender,DOB"
             //-------------------------------------
-            var login_setup_tid=$vm.module_list[m.questionnaire_setup].Table;
             var online_questionnaire=$vm.public_url_$B;
             if($vm.localhost==true) online_questionnaire=$vm.local_url_$B;
             //-------------------------------------
@@ -21,13 +21,13 @@
                     case '_Data_Entry':
                         td.html("<u style='cursor:pointer'>Data Entry</u>");
                         td.find('u').on('click',function(){
-    						$vm.load_module(m.child_panel,'',{record:records[I]});
+    						$vm.load_module(m.prefix+m.panel_child,'',{record:records[I]});
                         });
                         break;
                     case '_Setup':
                         td.html("<u style='cursor:pointer'>Login Setup</u>");
                         td.find('u').on('click',function(){
-    						$vm.load_module(m.questionnaire_setup,'',{record:records[I]});
+    						$vm.load_module(m.prefix+m.questionnaire_setup,'',{record:records[I]});
                         });
                         break;
                     case '_Quest':

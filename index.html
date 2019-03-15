@@ -20,7 +20,7 @@
         //app urls
         $vm.public_url_$A='https://cansleep.rt.org.au';
         $vm.local_url_$A='http://127.0.0.1:8000/woolcock-imr/cansleep';
-        $vm.public_url_$B='http://cansleep-online-questionnaire.rt.org.au';
+        $vm.public_url_$B='https://cansleep-online-questionnaire.rt.org.au';
         $vm.local_url_$B='http://127.0.0.1:8000/woolcock-imr/cansleep-online-questionnaire';
         //------------------------------------
         //where are your start modules
@@ -32,13 +32,22 @@
         //modules used in this app
         $vm.module_list={
             //you can add modules here directly
-            "home":             {url:"$A/modules/h/home.html",router:1},
+            "home":                             {url:"$A/modules/h/home.html",router:1},
+            "panel-permission":   			    {url:"$A/modules/p/permission/panel-permission.html",router:1},
+            "permission-check":                 {url:"$A/modules/p/permission/permission-check.html"},
+            "permission-role-login-data":       {url:"$A/modules/p/permission/permission-role-login-data.html",Table:"91000628",form_module:"permission-role-login-form"},
+            "permission-role-login-form":       {url:"$A/modules/p/permission/permission-role-login-form.html",Table:"91000628"},
+            "permission-role-table-group-data": {url:"$A/modules/p/permission/permission-role-table-group-data.html",Table:"91000627",form_module:"permission-role-table-group-form"},
+            "permission-role-table-group-form": {url:"$A/modules/p/permission/permission-role-table-group-form.html",Table:"91000627"},
+            "permission-query-data":            {url:"$A/modules/p/permission/permission-query-data.html",Table:"91000626",form_module:"permission-query-form"},
+            "permission-query-form":            {url:"$A/modules/p/permission/permission-query-form.html",Table:"91000626"},
         };
         //------------------------------------
         //where are your all other modules
         $vm.app_modules=[
             //you can add a js file that will add mmodules to the $vm.module_list
-            "$A/modules/cansleep.js",
+            "$A/modules/cansleep-app.js",
+            "$A/modules/cansleep-task.js",
         ]
         //------------------------------------
         
@@ -82,13 +91,13 @@
                 $.get(url+'?_='+new Date().getTime(),function(new_txt){
                     localStorage.setItem(apppath+url+"txt",new_txt);
                     localStorage.setItem(apppath+url+"ver",$vm.ver[0]);
-                    console.log('loading from url. '+url);
+                    console.log('loading from url. '+url+' '+ver+'/'+$vm.ver[0]);
                     $('#content').append(new_txt.replace(/__ID/g,'_'+(index+1)));
                     $vm._boot();
                 },'text');
             }
             else{
-                console.log('loading from storage. '+url);
+                console.log('loading from storage. '+url+' '+ver+'/'+$vm.ver[0]);
                 $('#content').append(txt.replace(/__ID/g,'_'+(index+1)));
                 $vm._boot();
             }
@@ -101,13 +110,13 @@
                 $.get(url+'?_='+new Date().getTime(),function(new_txt){
                     localStorage.setItem(apppath+url+"txt",new_txt);
                     localStorage.setItem(apppath+url+"ver",$vm.ver[0]);
-                    console.log('loading from url. '+url);
+                    console.log('loading from url. '+url+' '+ver+'/'+$vm.ver[0]);
                     eval(new_txt);
                     $vm._boot();
                 },'text');
             }
             else{
-                console.log('loading from storage. '+url);
+                console.log('loading from storage. '+url+' '+ver+'/'+$vm.ver[0]);
                 eval(txt);
                 $vm._boot();
             }
