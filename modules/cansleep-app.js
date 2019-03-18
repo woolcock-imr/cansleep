@@ -14,6 +14,8 @@
         "online-questionnaire-setup": 	    {url:"$A/modules/c/cansleep/online-questionnaire-setup.html",Table:"91000629"},
         "online-questionnaire-panel":       {url:"$A/modules/c/cansleep/online-questionnaire-panel.html"},
         "online-questionnaire-login":       {url:"$A/modules/c/cansleep/online-questionnaire-login.html"},
+        "job-tracking-data":	  		    {url:"$A/modules/j/job-tracking-data.html",Table:"91000637",form_module:"job-tracking-form"},
+        "job-tracking-form":	  		    {url:"$A/modules/j/job-tracking-form.html",Table:"91000637"},
     }
     var $A="https://cansleep.rt.org.au";
     if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";

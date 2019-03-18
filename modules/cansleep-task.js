@@ -18,6 +18,39 @@
         "s-actigraphy-data":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-data.html",Table:"91000634",form_module:"s-actigraphy-form"},
         "s-actigraphy-form":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-form.html",Table:"91000634"},
         
+        "p1-ksd-data":		            {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-data.html",Table:"91000638",form_module:"p1-ksd-form"},
+        "p1-ksd-form":		            {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-form.html",Table:"91000638"},
+        "p1-actigraphy-data":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-data.html",Table:"91000639",form_module:"p1-actigraphy-form"},
+        "p1-actigraphy-form":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-form.html",Table:"91000639"},
+        "p2-ksd-data":		            {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-data.html",Table:"91000640",form_module:"p2-ksd-form"},
+        "p2-ksd-form":		            {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-form.html",Table:"91000640"},
+        "p2-actigraphy-data":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-data.html",Table:"91000641",form_module:"p2-actigraphy-form"},
+        "p2-actigraphy-form":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-form.html",Table:"91000641"},
+        
+        "t1-visit-date-data":		    {url:"$A/modules/c/cansleep/tasks/visit-date-data.html",Table:"91000642",form_module:"t1-visit-date-form"},
+        "t1-visit-date-form":		    {url:"$A/modules/c/cansleep/tasks/visit-date-form.html",Table:"91000642"},
+        "t2-visit-date-data":		    {url:"$A/modules/c/cansleep/tasks/visit-date-data.html",Table:"91000643",form_module:"t2-visit-date-form"},
+        "t2-visit-date-form":		    {url:"$A/modules/c/cansleep/tasks/visit-date-form.html",Table:"91000643"},
+        
+        "t1-sds-data":                  {url:"$A/modules/c/cansleep/tasks/salivary-drug-screen-data.html",Table:"91000644",form_module:"t1-sds-form"},
+        "t1-sds-form":	                {url:"$A/modules/c/cansleep/tasks/salivary-drug-screen-form.html",Table:"91000644"},
+        "t2-sds-data":	                {url:"$A/modules/c/cansleep/tasks/salivary-drug-screen-data.html",Table:"91000645",form_module:"t2-sds-form"},
+        "t2-sds-form":	                {url:"$A/modules/c/cansleep/tasks/salivary-drug-screen-form.html",Table:"91000645"},
+      
+        "t1-isi-data":                  {url:"$A/modules/c/cansleep/tasks/insomnia-severity-index-data.html",Table:"91000647",form_module:"t1-isi-form"},
+        "t1-isi-form":	                {url:"$A/modules/c/cansleep/tasks/insomnia-severity-index-form.html",Table:"91000647"},
+        "t2-isi-data":	                {url:"$A/modules/c/cansleep/tasks/insomnia-severity-index-data.html",Table:"91000648",form_module:"t2-isi-form"},
+        "t2-isi-form":	                {url:"$A/modules/c/cansleep/tasks/insomnia-severity-index-form.html",Table:"91000648"},
+        
+        "t1-dass-data":                 {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-data.html",Table:"91000649",form_module:"t1-dass-form"},
+        "t1-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000649"},
+        "t2-dass-data":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-data.html",Table:"91000650",form_module:"t2-dass-form"},
+        "t2-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000650"},
+        
+        "t1-psqi-data":                 {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000651",form_module:"t1-psqi-form"},
+        "t1-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000651"},
+        "t2-psqi-data":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000652",form_module:"t2-psqi-form"},
+        "t2-dass-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000652"},
         /*
         "anthropometry-data":		    {url:"$A/modules/c/cansleep/task/anthropometry-data.html",Table:"anthropometry",form_module:"anthropometry-form"},
         "anthropometry-form":		    {url:"$A/modules/c/cansleep/task/anthropometry-form.html",Table:"anthropometry"},
