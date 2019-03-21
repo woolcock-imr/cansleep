@@ -69,6 +69,35 @@
         "s-brain-mri-upload-form":	    {url:"$A/modules/c/cansleep/tasks/brain-mri-report-upload-form.html",Table:"91000658"},
         "blood-upload-data":	        {url:"$A/modules/c/cansleep/tasks/blood-analysis-upload-data.html",Table:"91000659",form_module:"blood-upload-form"},
         "blood-upload-form":	        {url:"$A/modules/c/cansleep/tasks/blood-analysis-upload-form.html",Table:"91000659"},
+        
+        "word-pairs-set1-evening":	    {url:"$A/modules/c/cansleep/word-pairs/set1-evening.html"},
+        "word-pairs-set2-evening":	    {url:"$A/modules/c/cansleep/word-pairs/set2-evening.html"},
+        "word-pairs-set1-morning":	    {url:"$A/modules/c/cansleep/word-pairs/set1-morning.html"},
+        "word-pairs-set2-morning":	    {url:"$A/modules/c/cansleep/word-pairs/set2-morning.html"},
+        
+        "t1-ft6-data":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-data.html",Table:"91000660",form_module:"t1-ft6-form",quest_module:"t1-ft6-quest"},
+        "t1-ft6-form":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-form.html",Table:"91000660"},
+        "t1-ft6-quest":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-quest.html",Table:"91000660"},
+        
+        "t2-ft6-data":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-data.html",Table:"91000661",form_module:"t2-ft6-form",quest_module:"t1-ft6-quest"},
+        "t2-ft6-form":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-form.html",Table:"91000661"},
+        "t2-ft6-quest":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-quest.html",Table:"91000661"},
+        
+        "t1-stroop-text-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-data.html",Table:"91000662",form_module:"t1-stroop-text-form",quest_module:"t1-stroop-text-quest"},
+        "t1-stroop-text-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-form.html",Table:"91000662"},
+        "t1-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000662"},
+        
+        "t2-stroop-text-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-data.html",Table:"91000663",form_module:"t2-stroop-text-form",quest_module:"t1-stroop-text-quest"},
+        "t2-stroop-text-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-form.html",Table:"91000663"},
+        "t2-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000663"},
+        
+        "t1-stroop-color-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-data.html",Table:"91000664",form_module:"t1-stroop-color-form",quest_module:"t1-stroop-color-quest"},
+        "t1-stroop-color-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-form.html",Table:"91000664"},
+        "t1-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000664"},
+        
+        "t2-stroop-color-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-data.html",Table:"91000665",form_module:"t2-stroop-color-form",quest_module:"t1-stroop-color-quest"},
+        "t2-stroop-color-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-form.html",Table:"91000665"},
+        "t2-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000665"},
     }
     var $A="https://cansleep.rt.org.au";
     if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
