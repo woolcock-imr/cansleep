@@ -1,0 +1,145 @@
+<div id=D__ID>
+	<section id=form_container__ID>
+		<div id=header__ID>
+			LSEQ
+		</div>
+		<form id=F__ID>
+			<div class="container">
+                <!-- participant part for all tsak forms -------------------->
+                <div class="row row__ID" id=row_participant__ID>
+                    <div class="col-sm-9 col-lg-9 input__ID">
+                        <span class=label__ID>Participant</span><br>
+                        <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" />
+                    </div>
+                    <div class="col-sm-3 col-lg-3 input__ID">
+                        <span class=label__ID>Participant ID</span><br>
+                        <input type=text name="Participant_uid" class=form-control readonly />
+                    </div>
+                    <hr style="border-top: 1px solid #888;width: 100%;margin:10px 0">
+                </div>
+                <!---------------------------------------------------->
+				<div class="row row__ID">
+					<div class='text-center label__ID'>
+						LEEDS1
+					</div>
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS1></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row">
+					<div class='text-center label__ID'>
+						LEEDS2
+					</div>
+				</div>
+				<div class="row row__ID">
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS2></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row row__ID">
+					<div class='text-center label__ID'>
+						LEEDS3
+					</div>
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS3></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row">
+					<div class='text-center label__ID'>
+						LEEDS4
+					</div>
+				</div>
+				<div class="row row__ID">
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS4></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row row__ID">
+					<div class='text-center label__ID'>
+						LEEDS5
+					</div>
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS5></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row">
+					<div class='text-center label__ID'>
+						LEEDS6
+					</div>
+				</div>
+				<div class="row row__ID">
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS6></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row row__ID">
+					<div class='text-center label__ID'>
+						LEEDS7
+					</div>
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS7></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row">
+					<div class='text-center label__ID'>
+						LEEDS8
+					</div>
+				</div>
+				<div class="row row__ID">
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS8></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row row__ID">
+					<div class='text-center label__ID'>
+						LEEDS9
+					</div>
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS9></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+				<div class="row">
+					<div class='text-center label__ID'>
+						LEEDS10
+					</div>
+				</div>
+				<div class="row row__ID">
+					<div class="col-lg-2 text-left">Best</div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS10></div>
+					<div class="col-lg-2 text-right">Worst</div>
+				</div>
+                
+                <br>
+				<div class="row">
+					<div class=col>
+						<button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</section>
+    VmInclude:__COMPONENT__/m/model.01.html
+	<script>
+		function F__ID(){
+			//-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+            VmInclude:__CURRENT_PATH__/task-form.js
+			//-------------------------------------
+		}
+	</script>
+	<style>
+		VmInclude:__COMPONENT__/f/form.01.css
+		#form_container__ID{
+			max-width:600px;
+		}
+		.label__ID{
+			width:100%;
+		}
+		.slider__ID{
+			width:100%;
+		}
+		#form_container__ID .row__ID:hover{
+			background-color: #f0f0f0;
+		}		
+	</style>
+</div>

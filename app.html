@@ -14,9 +14,9 @@
             </div>
             <div menu id="vm-menu">
                 <a href="?/home"><i class="fa fa-home"></i> Home</a>
-                <a href="?/cansleep-job-tracking-data"><i class="fa fa-th"></i> Job Tracking</a>
-                <a href="?/cansleep-panel-main"><i class="fa fa-th"></i> CANSLEEP</a>
-                <a href="?/panel-permission"><i class="fa fa-lock"></i> Permissions</a>
+                <a p=1 href="?/cansleep-job-tracking-data"><i class="fa fa-th"></i> Job Tracking</a>
+                <a p=1 href="?/cansleep-panel-main"><i class="fa fa-th"></i> CANSLEEP</a>
+                <a p=1 href="?/panel-permission"><i class="fa fa-lock"></i> Permissions</a>
                 <a id=vm_signin onclick="$vm.signin();"><i class="fa fa-user"></i> Sign In</a>
                 <a class=vm-hide id=vm_signout onclick=$vm.signout()><i class="fa fa-user"></i> Sign Out</a>
             </div>
@@ -153,6 +153,11 @@
         //------------------------------------
         $('#vm-menu a').on('click',function(e){
             e.preventDefault();
+            var p=$(this).attr('p');
+            if(p!=undefined && $vm.user=="guest"){
+                $vm.alert("Login first please!");
+                return;
+            }
             var href=$(this).attr('href');
             if(href!=undefined && href!='' && href.substring(0,8)=="https://"){ window.open(href); return;}
             if(href!=undefined && href!=''){

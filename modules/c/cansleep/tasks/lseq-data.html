@@ -8,16 +8,9 @@
             VmInclude:__COMPONENT__/g/grid.01.js
             VmInclude:__CURRENT_PATH__/task-data.js
             //-------------------------------------
-            var fields="SPC,SPRT,STTT,SCORR,STotal,ReactionTimes,ShownText,ShownColour,ResponseColour,Result";
+            var fields="LEEDS1,LEEDS2,LEEDS3,LEEDS4,LEEDS5,LEEDS6,LEEDS7,LEEDS8,LEEDS9LEEDS10";
             m.fields="_Form,Status|S3,Notes|NT,Participant_ID|Participant_uid,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
-            m.fields_e="Participant_ID,"+fields;
-            //-------------------------------------
-            m.new=function(){
-                if(m.form_module!=undefined){
-                    var participant_record=$vm.vm['__ID'].input.record; //from the child panel
-                    $vm.load_module(m.prefix+m.quest_module,'',{participant_record:participant_record,goback:1});
-                }
-            }
+            m.fields_e="Participant_ID|Participant_uid,"+fields
             //-------------------------------------
         }
     </script>
@@ -25,4 +18,3 @@
         VmInclude:__COMPONENT__/g/grid.01.css
     </style>
 </div>
-    

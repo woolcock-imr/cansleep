@@ -47,6 +47,22 @@
 						<input type=text class=form-control name=_Password>
 					</div>
 				</div>
+				<br>
+				<div class='row row__ID'>
+					<div class="col">
+						<button id=rand__ID type="button" class="btn btn-secondary">Randomisation</button>
+					</div>
+				</div>
+				<div class='row row__ID'>
+					<div class="col-lg-6">
+						<span>Randomisation Number</span>
+						<input type=text class=form-control name=Randomisation_Number readonly>
+					</div>
+					<div class="col-lg-6">
+						<span>Randomised by</span>
+						<input type=text class=form-control name=Randomised_by readonly>
+					</div>
+				</div>
 	
 				<br>
 				<div class="row">
@@ -73,7 +89,34 @@
 					$('#row_participant__ID').show()
 					$('#record__ID').val(m.input.record.UID)
 				}
+				process_randomisation();
 			}
+			//-------------------------------------
+			var process_randomisation=function(){
+				$('#rand__ID').show();
+				if(m.input.record.Randomisation_Number!=undefined && m.input.record.Randomisation_Number!=""){
+					$('#rand__ID').hide();
+				}
+			}
+			//-------------------------------------
+			$('#rand__ID').on('click',function(){
+				$('#rand__ID').hide();
+				var sql="select top 1 RN=max(V1) from [TABLE-"+m.db_pid+"]";
+				$VmAPI.request({data:{cmd:'read',qid:m.qid,sql:sql},callback:function(res){
+					if(res.records.length==1){
+						var RN=parseInt(res.records[0].RN)+1;
+						$('#F__ID input[name=Randomisation_Number').val(RN);
+						$('#F__ID input[name=Randomised_by').val($vm.user);
+					}
+				}})
+			})
+			//-------------------------------------
+			m.before_submit=function(record,dbv){
+				if(record.Randomisation_Number!=undefined && record.Randomisation_Number!=""){
+					dbv.V1=record.Randomisation_Number;
+				}
+				return true;
+			};
 			//-------------------------------------
 		}
 	</script>

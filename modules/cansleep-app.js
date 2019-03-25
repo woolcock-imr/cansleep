@@ -3,6 +3,8 @@
         "panel-main":                       {url:"$A/modules/c/cansleep/panel-main.html",router:1},
         "panel-child": 		                {url:"$A/modules/c/cansleep/panel-child.html"},
 
+        "randomisation-data":		        {url:"$A/modules/c/cansleep/tasks/randomisation-data.html",Table:"91000672",form_module:"randomisation-form"},
+        "randomisation-form":		        {url:"$A/modules/c/cansleep/tasks/randomisation-form.html",Table:"91000672"},
         "participant-data":     	        {url:"$A/modules/c/cansleep/participant-data.html", Table:"91000629",
                                                 form_module:"participant-form",
                                                 panel_child:"panel-child",

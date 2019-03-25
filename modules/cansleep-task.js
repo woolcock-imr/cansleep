@@ -18,8 +18,8 @@
         "s-actigraphy-data":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-data.html",Table:"91000634",form_module:"s-actigraphy-form"},
         "s-actigraphy-form":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-form.html",Table:"91000634"},
         
-        "p1-ksd-data":		            {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-data.html",Table:"91000638",form_module:"p1-ksd-form"},
-        "p1-ksd-form":		            {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-form.html",Table:"91000638"},
+        "p1-ksd-data":		            {url:"$A/modules/c/cansleep/tasks/file-upload-data.html",Table:"91000638",form_module:"p1-ksd-form"},
+        "p1-ksd-form":		            {url:"$A/modules/c/cansleep/tasks/file-upload-form.html",Table:"91000638"},
         "p1-actigraphy-data":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-data.html",Table:"91000639",form_module:"p1-actigraphy-form"},
         "p1-actigraphy-form":		    {url:"$A/modules/c/cansleep/tasks/actigraphy-form.html",Table:"91000639"},
         "p2-ksd-data":		            {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-data.html",Table:"91000640",form_module:"p2-ksd-form"},
@@ -98,6 +98,38 @@
         "t2-stroop-color-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-data.html",Table:"91000665",form_module:"t2-stroop-color-form",quest_module:"t1-stroop-color-quest"},
         "t2-stroop-color-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-form.html",Table:"91000665"},
         "t2-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000665"},
+        
+        "t1-nback1-data":	            {url:"$A/modules/c/cansleep/tasks/nback1-data.html",Table:"91000666",form_module:"t1-nback1-form",quest_module:"t1-nback1-quest"},
+        "t1-nback1-form":	            {url:"$A/modules/c/cansleep/tasks/nback1-form.html",Table:"91000666"},
+        "t1-nback1-quest":	            {url:"$A/modules/c/cansleep/tasks/nback1-quest.html",Table:"91000666"},
+        "t2-nback1-data":	            {url:"$A/modules/c/cansleep/tasks/nback1-data.html",Table:"91000667",form_module:"t2-nback1-form",quest_module:"t2-nback1-quest"},
+        "t2-nback1-form":	            {url:"$A/modules/c/cansleep/tasks/nback1-form.html",Table:"91000667"},
+        "t2-nback1-quest":	            {url:"$A/modules/c/cansleep/tasks/nback1-quest.html",Table:"91000667"},
+        
+        "t1-nback2-data":	            {url:"$A/modules/c/cansleep/tasks/nback2-data.html",Table:"91000668",form_module:"t1-nback2-form",quest_module:"t1-nback2-quest"},
+        "t1-nback2-form":	            {url:"$A/modules/c/cansleep/tasks/nback2-form.html",Table:"91000668"},
+        "t1-nback2-quest":	            {url:"$A/modules/c/cansleep/tasks/nback2-quest.html",Table:"91000668"},
+        "t2-nback2-data":	            {url:"$A/modules/c/cansleep/tasks/nback2-data.html",Table:"91000669",form_module:"t2-nback2-form",quest_module:"t2-nback2-quest"},
+        "t2-nback2-form":	            {url:"$A/modules/c/cansleep/tasks/nback2-form.html",Table:"91000669"},
+        "t2-nback2-quest":	            {url:"$A/modules/c/cansleep/tasks/nback2-quest.html",Table:"91000669"},
+        
+        "t1-dsdu-data":		            {url:"$A/modules/c/cansleep/tasks/file-upload-data.html",Table:"91000670",form_module:"t1-dsdu-form"},
+        "t1-dsdu-form":		            {url:"$A/modules/c/cansleep/tasks/file-upload-form.html",Table:"91000670"},
+        "t2-dsdu-data":		            {url:"$A/modules/c/cansleep/tasks/file-upload-data.html",Table:"91000671",form_module:"t2-dsdu-form"},
+        "t2-dsdu-form":		            {url:"$A/modules/c/cansleep/tasks/file-upload-form.html",Table:"91000671"},
+
+        "t1-lseq-data":		            {url:"$A/modules/c/cansleep/tasks/lseq-data.html",Table:"91000673",form_module:"t1-lseq-form"},
+        "t1-lseq-form":		            {url:"$A/modules/c/cansleep/tasks/lseq-form.html",Table:"91000673"},
+        "t2-lseq-data":		            {url:"$A/modules/c/cansleep/tasks/lseq-data.html",Table:"91000674",form_module:"t2-lseq-form"},
+        "t2-lseq-form":		            {url:"$A/modules/c/cansleep/tasks/lseq-form.html",Table:"91000674"},
+        
+        "t1-disrs-data":		        {url:"$A/modules/c/cansleep/tasks/disrs-data.html",Table:"91000675",form_module:"t1-disrs-form"},
+        "t1-disrs-form":		        {url:"$A/modules/c/cansleep/tasks/disrs-form.html",Table:"91000675"},
+        "t2-disrs-data":		        {url:"$A/modules/c/cansleep/tasks/disrs-data.html",Table:"91000676",form_module:"t2-disrs-form"},
+        "t2-disrs-form":		        {url:"$A/modules/c/cansleep/tasks/disrs-form.html",Table:"91000676"},
+
+        "medical-history-data":		    {url:"$A/modules/c/cansleep/tasks/medical-history-data.html",Table:"91000677",form_module:"medical-history-form"},
+        "medical-history-form":		    {url:"$A/modules/c/cansleep/tasks/medical-history-form.html",Table:"91000677"},
     }
     var $A="https://cansleep.rt.org.au";
     if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";

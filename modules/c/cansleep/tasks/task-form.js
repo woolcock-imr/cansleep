@@ -66,6 +66,10 @@ m.before_submit=function(record,dbv){
        dbv.PUID=record.Participant_uid;
        dbv.S3=$vm.status_of_data(record);
    }
+   else{
+       $vm.alert("No participant ID.");
+       return false;
+   }
    return true;
 };
 //-------------------------------------
