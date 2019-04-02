@@ -26,14 +26,12 @@
 					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS1></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
-				<div class="row">
+				<div class="row row__ID">
 					<div class='text-center label__ID'>
 						LEEDS2
 					</div>
-				</div>
-				<div class="row row__ID">
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS2></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS2></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row row__ID">
@@ -41,7 +39,7 @@
 						LEEDS3
 					</div>
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS3></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS3></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row">
@@ -51,7 +49,7 @@
 				</div>
 				<div class="row row__ID">
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS4></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS4></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row row__ID">
@@ -59,7 +57,7 @@
 						LEEDS5
 					</div>
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS5></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS5></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row">
@@ -69,7 +67,7 @@
 				</div>
 				<div class="row row__ID">
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS6></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS6></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row row__ID">
@@ -77,7 +75,7 @@
 						LEEDS7
 					</div>
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS7></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS7></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row">
@@ -87,7 +85,7 @@
 				</div>
 				<div class="row row__ID">
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS8></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS8></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row row__ID">
@@ -95,7 +93,7 @@
 						LEEDS9
 					</div>
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID' name=LEEDS9></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS9></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
 				<div class="row">
@@ -105,7 +103,7 @@
 				</div>
 				<div class="row row__ID">
 					<div class="col-lg-2 text-left">Best</div>
-					<div class="col-lg-8"><input type="range" min="0" max="100" class=slider__ID name=LEEDS10></div>
+					<div class="col-lg-8"><input type="range" min="0" max="100" class='slider__ID slider_noclick__ID' name=LEEDS10></div>
 					<div class="col-lg-2 text-right">Worst</div>
 				</div>
                 
@@ -125,6 +123,19 @@
             VmInclude:__COMPONENT__/f/form.01.js
             VmInclude:__CURRENT_PATH__/task-form.js
 			//-------------------------------------
+            var load5=m.load;
+            m.load=function(){
+				load5();
+                if(m.input.record==undefined || m.input.record!=undefined && m.input.record.ID==undefined){
+					$('.slider__ID').addClass('slider_noclick__ID');
+				}
+				else $('.slider__ID').removeClass('slider_noclick__ID');
+            }
+            //-------------------------------------
+			$('.slider__ID').on('click',function(){
+				$(this).removeClass('slider_noclick__ID');
+			})
+            //-------------------------------------
 		}
 	</script>
 	<style>
@@ -141,5 +152,20 @@
 		#form_container__ID .row__ID:hover{
 			background-color: #f0f0f0;
 		}		
+		.slider_noclick__ID{
+			-webkit-appearance: none;
+			-moz-appearance: none;
+            outline: none;
+			height: 4px;
+			width: 100%;
+			background-color: rgb(227, 221, 216);;
+		}
+		.slider_noclick__ID::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			width: 0;
+			height: 0;
+		}
+
 	</style>
 </div>
