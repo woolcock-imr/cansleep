@@ -128,8 +128,11 @@
         "t2-disrs-data":		        {url:"$A/modules/c/cansleep/tasks/disrs-data.html",Table:"91000676",form_module:"t2-disrs-form"},
         "t2-disrs-form":		        {url:"$A/modules/c/cansleep/tasks/disrs-form.html",Table:"91000676",task_name:"disrs"},
 
-        "medical-history-data":		    {url:"$A/modules/c/cansleep/tasks/medical-history-data.html",Table:"91000677",form_module:"medical-history-form"},
-        "medical-history-form":		    {url:"$A/modules/c/cansleep/tasks/medical-history-form.html",Table:"91000677"},
+        "medical-history-data":		    {url:"$A/modules/c/cansleep/tasks/file-upload-data.html",Table:"91000677",form_module:"medical-history-form"},
+        "medical-history-form":		    {url:"$A/modules/c/cansleep/tasks/file-upload-form.html",Table:"91000677"},
+        
+        "s-urinary-drug-screen-data":		{url:"$A/modules/c/cansleep/tasks/urinary-drug-screen-data.html",Table:"91000679",form_module:"s-urinary-drug-screen-form"},
+        "s-urinary-drug-screen-form":		{url:"$A/modules/c/cansleep/tasks/urinary-drug-screen-form.html",Table:"91000679"},
     }
     var $A="https://cansleep.rt.org.au";
     if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
