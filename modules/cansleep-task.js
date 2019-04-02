@@ -43,19 +43,19 @@
         "t2-isi-form":	                {url:"$A/modules/c/cansleep/tasks/insomnia-severity-index-form.html",Table:"91000648"},
         
         "t1-dass-data":                 {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-data.html",Table:"91000649",form_module:"t1-dass-form"},
-        "t1-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000649"},
+        "t1-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000649",task_name:"dass"},
         "t2-dass-data":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-data.html",Table:"91000650",form_module:"t2-dass-form"},
-        "t2-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000650"},
+        "t2-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000650",task_name:"dass"},
         
         "t1-psqi-data":                 {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000651",form_module:"t1-psqi-form"},
-        "t1-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000651"},
+        "t1-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000651",task_name:"psqi"},
         "t2-psqi-data":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000652",form_module:"t2-psqi-form"},
-        "t2-dass-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000652"},
+        "t2-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000652",task_name:"psqi"},
         
         "t1-ess-data":                  {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-data.html",Table:"91000653",form_module:"t1-ess-form"},
-        "t1-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000653"},
+        "t1-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000653",task_name:"ess"},
         "t2-ess-data":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-data.html",Table:"91000654",form_module:"t2-ess-form"},
-        "t2-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000654"},
+        "t2-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000654",task_name:"ess"},
 
         "s-iecc-data":	                {url:"$A/modules/c/cansleep/tasks/inclusion-and-exclusion-criteria-checklist-data.html",Table:"91000655",form_module:"s-iecc-form"},
         "s-iecc-form":	                {url:"$A/modules/c/cansleep/tasks/inclusion-and-exclusion-criteria-checklist-form.html",Table:"91000655"},
@@ -77,41 +77,41 @@
         
         "t1-ft6-data":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-data.html",Table:"91000660",form_module:"t1-ft6-form",quest_module:"t1-ft6-quest"},
         "t1-ft6-form":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-form.html",Table:"91000660"},
-        "t1-ft6-quest":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-quest.html",Table:"91000660"},
+        "t1-ft6-quest":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-quest.html",Table:"91000660",task_name:"ft"},
         
         "t2-ft6-data":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-data.html",Table:"91000661",form_module:"t2-ft6-form",quest_module:"t1-ft6-quest"},
         "t2-ft6-form":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-form.html",Table:"91000661"},
-        "t2-ft6-quest":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-quest.html",Table:"91000661"},
+        "t2-ft6-quest":	                {url:"$A/modules/c/cansleep/tasks/finger-tapping-6-quest.html",Table:"91000661",task_name:"ft"},
         
         "t1-stroop-text-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-data.html",Table:"91000662",form_module:"t1-stroop-text-form",quest_module:"t1-stroop-text-quest"},
         "t1-stroop-text-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-form.html",Table:"91000662"},
-        "t1-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000662"},
+        "t1-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000662",task_name:"text"},
         
         "t2-stroop-text-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-data.html",Table:"91000663",form_module:"t2-stroop-text-form",quest_module:"t1-stroop-text-quest"},
         "t2-stroop-text-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-form.html",Table:"91000663"},
-        "t2-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000663"},
+        "t2-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000663",task_name:"text"},
         
         "t1-stroop-color-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-data.html",Table:"91000664",form_module:"t1-stroop-color-form",quest_module:"t1-stroop-color-quest"},
         "t1-stroop-color-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-form.html",Table:"91000664"},
-        "t1-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000664"},
+        "t1-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000664",task_name:"color"},
         
         "t2-stroop-color-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-data.html",Table:"91000665",form_module:"t2-stroop-color-form",quest_module:"t1-stroop-color-quest"},
         "t2-stroop-color-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-form.html",Table:"91000665"},
-        "t2-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000665"},
+        "t2-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000665",task_name:"color"},
         
         "t1-nback1-data":	            {url:"$A/modules/c/cansleep/tasks/nback1-data.html",Table:"91000666",form_module:"t1-nback1-form",quest_module:"t1-nback1-quest"},
         "t1-nback1-form":	            {url:"$A/modules/c/cansleep/tasks/nback1-form.html",Table:"91000666"},
-        "t1-nback1-quest":	            {url:"$A/modules/c/cansleep/tasks/nback1-quest.html",Table:"91000666"},
+        "t1-nback1-quest":	            {url:"$A/modules/c/cansleep/tasks/nback1-quest.html",Table:"91000666",task_name:"1-back"},
         "t2-nback1-data":	            {url:"$A/modules/c/cansleep/tasks/nback1-data.html",Table:"91000667",form_module:"t2-nback1-form",quest_module:"t2-nback1-quest"},
         "t2-nback1-form":	            {url:"$A/modules/c/cansleep/tasks/nback1-form.html",Table:"91000667"},
-        "t2-nback1-quest":	            {url:"$A/modules/c/cansleep/tasks/nback1-quest.html",Table:"91000667"},
+        "t2-nback1-quest":	            {url:"$A/modules/c/cansleep/tasks/nback1-quest.html",Table:"91000667",task_name:"1-back"},
         
         "t1-nback2-data":	            {url:"$A/modules/c/cansleep/tasks/nback2-data.html",Table:"91000668",form_module:"t1-nback2-form",quest_module:"t1-nback2-quest"},
         "t1-nback2-form":	            {url:"$A/modules/c/cansleep/tasks/nback2-form.html",Table:"91000668"},
-        "t1-nback2-quest":	            {url:"$A/modules/c/cansleep/tasks/nback2-quest.html",Table:"91000668"},
+        "t1-nback2-quest":	            {url:"$A/modules/c/cansleep/tasks/nback2-quest.html",Table:"91000668",task_name:"2-back"},
         "t2-nback2-data":	            {url:"$A/modules/c/cansleep/tasks/nback2-data.html",Table:"91000669",form_module:"t2-nback2-form",quest_module:"t2-nback2-quest"},
         "t2-nback2-form":	            {url:"$A/modules/c/cansleep/tasks/nback2-form.html",Table:"91000669"},
-        "t2-nback2-quest":	            {url:"$A/modules/c/cansleep/tasks/nback2-quest.html",Table:"91000669"},
+        "t2-nback2-quest":	            {url:"$A/modules/c/cansleep/tasks/nback2-quest.html",Table:"91000669",task_name:"2-back"},
         
         "t1-dsdu-data":		            {url:"$A/modules/c/cansleep/tasks/file-upload-data.html",Table:"91000670",form_module:"t1-dsdu-form"},
         "t1-dsdu-form":		            {url:"$A/modules/c/cansleep/tasks/file-upload-form.html",Table:"91000670"},
@@ -119,14 +119,14 @@
         "t2-dsdu-form":		            {url:"$A/modules/c/cansleep/tasks/file-upload-form.html",Table:"91000671"},
 
         "t1-lseq-data":		            {url:"$A/modules/c/cansleep/tasks/lseq-data.html",Table:"91000673",form_module:"t1-lseq-form"},
-        "t1-lseq-form":		            {url:"$A/modules/c/cansleep/tasks/lseq-form.html",Table:"91000673"},
+        "t1-lseq-form":		            {url:"$A/modules/c/cansleep/tasks/lseq-form.html",Table:"91000673",task_name:"lseq"},
         "t2-lseq-data":		            {url:"$A/modules/c/cansleep/tasks/lseq-data.html",Table:"91000674",form_module:"t2-lseq-form"},
-        "t2-lseq-form":		            {url:"$A/modules/c/cansleep/tasks/lseq-form.html",Table:"91000674"},
+        "t2-lseq-form":		            {url:"$A/modules/c/cansleep/tasks/lseq-form.html",Table:"91000674",task_name:"lseq"},
         
         "t1-disrs-data":		        {url:"$A/modules/c/cansleep/tasks/disrs-data.html",Table:"91000675",form_module:"t1-disrs-form"},
-        "t1-disrs-form":		        {url:"$A/modules/c/cansleep/tasks/disrs-form.html",Table:"91000675"},
+        "t1-disrs-form":		        {url:"$A/modules/c/cansleep/tasks/disrs-form.html",Table:"91000675",task_name:"disrs"},
         "t2-disrs-data":		        {url:"$A/modules/c/cansleep/tasks/disrs-data.html",Table:"91000676",form_module:"t2-disrs-form"},
-        "t2-disrs-form":		        {url:"$A/modules/c/cansleep/tasks/disrs-form.html",Table:"91000676"},
+        "t2-disrs-form":		        {url:"$A/modules/c/cansleep/tasks/disrs-form.html",Table:"91000676",task_name:"disrs"},
 
         "medical-history-data":		    {url:"$A/modules/c/cansleep/tasks/medical-history-data.html",Table:"91000677",form_module:"medical-history-form"},
         "medical-history-form":		    {url:"$A/modules/c/cansleep/tasks/medical-history-form.html",Table:"91000677"},
