@@ -48,14 +48,14 @@
         "t2-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000650",task_name:"dass"},
         
         "t1-psqi-data":                 {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000651",form_module:"t1-psqi-form"},
-        "t1-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000651",task_name:"psqi"},
+        "t1-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000651",task_name:"Pittsburgh Sleep Quality Index"},
         "t2-psqi-data":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000652",form_module:"t2-psqi-form"},
-        "t2-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000652",task_name:"psqi"},
+        "t2-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000652",task_name:"Pittsburgh Sleep Quality Index"},
         
         "t1-ess-data":                  {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-data.html",Table:"91000653",form_module:"t1-ess-form"},
-        "t1-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000653",task_name:"ess"},
+        "t1-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000653",task_name:"Epworth Sleepiness Scale"},
         "t2-ess-data":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-data.html",Table:"91000654",form_module:"t2-ess-form"},
-        "t2-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000654",task_name:"ess"},
+        "t2-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000654",task_name:"Epworth Sleepiness Scale"},
 
         "s-iecc-data":	                {url:"$A/modules/c/cansleep/tasks/inclusion-and-exclusion-criteria-checklist-data.html",Table:"91000655",form_module:"s-iecc-form"},
         "s-iecc-form":	                {url:"$A/modules/c/cansleep/tasks/inclusion-and-exclusion-criteria-checklist-form.html",Table:"91000655"},
@@ -85,19 +85,19 @@
         
         "t1-stroop-text-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-data.html",Table:"91000662",form_module:"t1-stroop-text-form",quest_module:"t1-stroop-text-quest"},
         "t1-stroop-text-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-form.html",Table:"91000662"},
-        "t1-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000662",task_name:"text"},
+        "t1-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000662",task_name:"Stroop text"},
         
         "t2-stroop-text-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-data.html",Table:"91000663",form_module:"t2-stroop-text-form",quest_module:"t1-stroop-text-quest"},
         "t2-stroop-text-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-form.html",Table:"91000663"},
-        "t2-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000663",task_name:"text"},
+        "t2-stroop-text-quest":	        {url:"$A/modules/c/cansleep/tasks/stroop-text-quest.html",Table:"91000663",task_name:"Stroop text"},
         
         "t1-stroop-color-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-data.html",Table:"91000664",form_module:"t1-stroop-color-form",quest_module:"t1-stroop-color-quest"},
         "t1-stroop-color-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-form.html",Table:"91000664"},
-        "t1-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000664",task_name:"color"},
+        "t1-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000664",task_name:"Stroop color"},
         
         "t2-stroop-color-data":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-data.html",Table:"91000665",form_module:"t2-stroop-color-form",quest_module:"t1-stroop-color-quest"},
         "t2-stroop-color-form":	        {url:"$A/modules/c/cansleep/tasks/stroop-color-form.html",Table:"91000665"},
-        "t2-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000665",task_name:"color"},
+        "t2-stroop-color-quest":	    {url:"$A/modules/c/cansleep/tasks/stroop-color-quest.html",Table:"91000665",task_name:"Stroop color"},
         
         "t1-nback1-data":	            {url:"$A/modules/c/cansleep/tasks/nback1-data.html",Table:"91000666",form_module:"t1-nback1-form",quest_module:"t1-nback1-quest"},
         "t1-nback1-form":	            {url:"$A/modules/c/cansleep/tasks/nback1-form.html",Table:"91000666"},
@@ -133,6 +133,13 @@
         
         "s-urinary-drug-screen-data":		{url:"$A/modules/c/cansleep/tasks/urinary-drug-screen-data.html",Table:"91000679",form_module:"s-urinary-drug-screen-form"},
         "s-urinary-drug-screen-form":		{url:"$A/modules/c/cansleep/tasks/urinary-drug-screen-form.html",Table:"91000679"},
+
+
+        "t1-kss-data":		        {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-data.html",Table:"91000680",form_module:"t1-kss-form"},
+        "t1-kss-form":		        {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-form.html",Table:"91000680",task_name:"Karolinska Sleepiness Scale"},
+        "t2-kss-data":		        {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-data.html",Table:"91000681",form_module:"t2-kss-form"},
+        "t2-kss-form":		        {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-form.html",Table:"91000681",task_name:"Karolinska Sleepiness Scale"},
+
     }
     var $A="https://cansleep.rt.org.au";
     if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
