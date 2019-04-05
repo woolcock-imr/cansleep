@@ -19,12 +19,12 @@
         "job-tracking-data":	  		    {url:"$A/modules/j/job-tracking-data.html",Table:"91000637",form_module:"job-tracking-form"},
         "job-tracking-form":	  		    {url:"$A/modules/j/job-tracking-form.html",Table:"91000637"},
     }
-    var $A="https://cansleep.rt.org.au";
-    if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
+    //var $A="https://cansleep.rt.org.au";
+    //if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
     var prefix="cansleep-";
     for(m in modules){
         $vm.module_list[prefix+m]=modules[m];
         $vm.module_list[prefix+m].prefix=prefix;
-        $vm.module_list[prefix+m].url=$vm.module_list[prefix+m].url.replace("$A",$A);
+        //$vm.module_list[prefix+m].url=$vm.module_list[prefix+m].url.replace("$A",$A);
     }
 })();

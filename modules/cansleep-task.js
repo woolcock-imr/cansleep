@@ -141,12 +141,12 @@
         "t2-kss-form":		        {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-form.html",Table:"91000681",task_name:"Karolinska Sleepiness Scale"},
 
     }
-    var $A="https://cansleep.rt.org.au";
-    if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
+    //var $A="https://cansleep.rt.org.au";
+    //if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
     var prefix="cansleep-";
     for(m in modules){
         $vm.module_list[prefix+m]=modules[m];
         $vm.module_list[prefix+m].prefix=prefix;
-        $vm.module_list[prefix+m].url=$vm.module_list[prefix+m].url.replace("$A",$A);
+        //$vm.module_list[prefix+m].url=$vm.module_list[prefix+m].url.replace("$A",$A);
     }
 })();
