@@ -40,6 +40,11 @@
             VmInclude:__COMPONENT__/f/form.01.js
             VmInclude:'__CURRENT_PATH__/task-form.js'
             //-------------------------------------
+            if($vm.online_questionnaire==1){
+                $('#row_participant__ID').hide();
+                $('#F__ID').css('border-width','0px');
+                $('#F__ID').css('border-top-width','0px');
+            }
             var new_task_record;
             var load5=m.load;
             m.load=function(){

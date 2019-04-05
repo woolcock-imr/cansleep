@@ -17,9 +17,9 @@
     </section>
     <section>
         <form id=F__ID>
-            <div class="container">
+            <div class="container" id=row_participant__ID>
                 <!-- participant part for all tsak forms -------------------->
-                <div class="row row__ID" id=row_participant__ID>
+                <div class="row row__ID">
                     <div class="col-sm-12 col-lg-9 input__ID">
                         <span class=label__ID>Participant</span><br>
                         <input type=text name="Participant" class=form-control id=Participant__ID data-id="Participant" required />
@@ -40,6 +40,11 @@
             VmInclude:__COMPONENT__/f/form.01.js
             VmInclude:'__CURRENT_PATH__/task-form.js'
             //-------------------------------------
+            if($vm.online_questionnaire==1){
+                $('#row_participant__ID').hide();
+                $('#F__ID').css('border-width','0px');
+                $('#F__ID').css('border-top-width','0px');
+            }
             var new_task_record;
             var load5=m.load;
             m.load=function(){
