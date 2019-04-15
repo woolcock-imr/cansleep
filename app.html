@@ -153,10 +153,12 @@
         //------------------------------------
         $('#vm-menu a').on('click',function(e){
             e.preventDefault();
-            var p=$(this).attr('p');
-            if(p!=undefined && $vm.user=="guest"){
-                $vm.alert("Login first please!");
-                return;
+            if(window.location.toString().indexOf('db=dev')==-1){
+                var p=$(this).attr('p');
+                if(p!=undefined && $vm.user=="guest"){
+                    $vm.alert("Login first please!");
+                    return;
+                }
             }
             var href=$(this).attr('href');
             if(href!=undefined && href!='' && href.substring(0,8)=="https://"){ window.open(href); return;}
