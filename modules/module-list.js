@@ -1,4 +1,42 @@
 (function(){
+    //-------------------------------------------------------------------------------------
+    //permission
+    var modules={
+        "panel-permission":   			    {url:"$A/modules/p/permission/panel-permission.html",router:1},
+        "permission-check":                 {url:"$A/modules/p/permission/permission-check.html"},
+        "permission-role-login-data":       {url:"$A/modules/p/permission/permission-role-login-data.html",Table:"91000628",form_module:"permission-role-login-form"},
+        "permission-role-login-form":       {url:"$A/modules/p/permission/permission-role-login-form.html",Table:"91000628"},
+        "permission-role-table-group-data": {url:"$A/modules/p/permission/permission-role-table-group-data.html",Table:"91000627",form_module:"permission-role-table-group-form"},
+        "permission-role-table-group-form": {url:"$A/modules/p/permission/permission-role-table-group-form.html",Table:"91000627"},
+        "permission-query-data":            {url:"$A/modules/p/permission/permission-query-data.html",Table:"91000626",form_module:"permission-query-form"},
+        "permission-query-form":            {url:"$A/modules/p/permission/permission-query-form.html",Table:"91000626"},
+    }
+    var prefix="";  for(m in modules){   $vm.module_list[prefix+m]=modules[m];   $vm.module_list[prefix+m].prefix=prefix;  }
+    //-------------------------------------------------------------------------------------
+    //app
+    var modules={
+        "panel-main":                       {url:"$A/modules/c/cansleep/panel-main.html",router:1},
+        "panel-child": 		                {url:"$A/modules/c/cansleep/panel-child.html"},
+
+        "randomisation-data":		        {url:"$A/modules/c/cansleep/tasks/randomisation-data.html",Table:"91000672",form_module:"randomisation-form"},
+        "randomisation-form":		        {url:"$A/modules/c/cansleep/tasks/randomisation-form.html",Table:"91000672"},
+        "participant-data":     	        {url:"$A/modules/c/cansleep/participant-data.html", Table:"91000629",
+                                                form_module:"participant-form",
+                                                panel_child:"panel-child",
+                                                online_questionnaire_setup:"online-questionnaire-setup"
+                                            },
+        "participant-form":     	        {url:"$A/modules/c/cansleep/participant-form.html", Table:"91000629"},
+        "edc-notes-data":	  		        {url:"$A/modules/c/cansleep/edc-notes-data.html",Table:"91000630",form_module:"edc-notes-form"},
+        "edc-notes-form":	  		        {url:"$A/modules/c/cansleep/edc-notes-form.html",Table:"91000630"},
+        "online-questionnaire-setup": 	    {url:"$A/modules/c/cansleep/online-questionnaire-setup.html",Table:"91000629"},
+        "online-questionnaire-panel":       {url:"$A/modules/c/cansleep/online-questionnaire-panel.html"},
+        "online-questionnaire-login":       {url:"$A/modules/c/cansleep/online-questionnaire-login.html"},
+        "job-tracking-data":	  		    {url:"$A/modules/j/job-tracking-data.html",Table:"91000637",form_module:"job-tracking-form"},
+        "job-tracking-form":	  		    {url:"$A/modules/j/job-tracking-form.html",Table:"91000637"},
+    }
+    var prefix="cansleep-";  for(m in modules){   $vm.module_list[prefix+m]=modules[m];   $vm.module_list[prefix+m].prefix=prefix;  }
+    //-------------------------------------------------------------------------------------
+    //tasks
     var modules={
         "adverse-event-data":		    {url:"$A/modules/c/cansleep/tasks/adverse-event-data.html",Table:"91000635",form_module:"adverse-event-form"},
         "adverse-event-form":		    {url:"$A/modules/c/cansleep/tasks/adverse-event-form.html",Table:"91000635"},
@@ -141,12 +179,6 @@
         "t2-kss-form":		        {url:"$A/modules/c/cansleep/tasks/karolinska-sleepiness-scale-form.html",Table:"91000681",task_name:"Karolinska Sleepiness Scale"},
 
     }
-    //var $A="https://cansleep.rt.org.au";
-    //if($vm.localhost==true) $A="http://127.0.0.1:8000/woolcock-imr/cansleep/";
-    var prefix="cansleep-";
-    for(m in modules){
-        $vm.module_list[prefix+m]=modules[m];
-        $vm.module_list[prefix+m].prefix=prefix;
-        //$vm.module_list[prefix+m].url=$vm.module_list[prefix+m].url.replace("$A",$A);
-    }
+    var prefix="cansleep-";  for(m in modules){   $vm.module_list[prefix+m]=modules[m];   $vm.module_list[prefix+m].prefix=prefix;  }
+    //-------------------------------------------------------------------------------------
 })();

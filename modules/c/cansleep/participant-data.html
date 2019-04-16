@@ -34,7 +34,7 @@
                         td.html("<u style='cursor:pointer'>Online Questionnaire</u>");
                         td.find('u').on('click',function(){
                             var db=""; if(window.location.toString().indexOf('db=dev')!=-1) db="&db=dev";
-                            var d="";  if(window.location.toString().indexOf('_d=1')!=-1) db="&_d=1";
+                            var d="";  if(window.location.toString().indexOf('_d=1')!=-1) d="&_d=1";
                             var p="?username="+records[I].UID+"-"+m.Table+"&password="+records[I]._Password;
                             var q_url=online_questionnaire+"/"+p+db+d;
     						window.open(q_url);
