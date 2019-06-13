@@ -98,7 +98,7 @@
         "t2-dass-data":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-data.html",Table:"91000650",form_module:"t2-dass-form"},
         "t2-dass-form":	                {url:"$A/modules/c/cansleep/tasks/depression-anxiety-stress-scales-form.html",Table:"91000650",task_name:"dass"},
         
-        "s-psqi-data":                  {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000730",form_module:"t1-psqi-form"},
+        "s-psqi-data":                  {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000730",form_module:"s-psqi-form"},
         "s-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000730",task_name:"Pittsburgh Sleep Quality Index"},
         /*
         "t1-psqi-data":                 {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-data.html",Table:"91000651",form_module:"t1-psqi-form"},
@@ -107,7 +107,7 @@
         "t2-psqi-form":	                {url:"$A/modules/c/cansleep/tasks/pittsburgh-sleep-quality-index-form.html",Table:"91000652",task_name:"Pittsburgh Sleep Quality Index"},
         */
 
-        "s-ess-data":                   {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-data.html",Table:"91000731",form_module:"t1-ess-form"},
+        "s-ess-data":                   {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-data.html",Table:"91000731",form_module:"s-ess-form"},
         "s-ess-form":	                {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-form.html",Table:"91000731",task_name:"Epworth Sleepiness Scale"},
         /*
         "t1-ess-data":                  {url:"$A/modules/c/cansleep/tasks/epworth-sleepiness-scale-data.html",Table:"91000653",form_module:"t1-ess-form"},
