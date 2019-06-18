@@ -11,8 +11,9 @@
             m.fields="_Form,"+fields+",Submit_date,Submitted_by,_Delete";
             m.fields_e="Participant_ID|UID,Subject_ID,Screening_Number,Subject_Initials,Gender,DOB"
             //-------------------------------------
-            var online_questionnaire=$vm.public_url_$B;
-            if($vm.localhost==true) online_questionnaire=$vm.local_url_$B;
+            $vm.url_$B=$vm.hosting_path.replace('cansleep','cansleep-online-questionnaire');
+            //------------------------------------
+            var online_questionnaire=$vm.url_$B;
             //-------------------------------------
             m.cell_render=function(records,I,field,td,set_value,source){
                 switch(field){
