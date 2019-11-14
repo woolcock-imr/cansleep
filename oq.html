@@ -37,13 +37,14 @@
         for(i in $vm.start_modules) $vm.start_modules[i]=$vm.start_modules[i].replace('$H',$vm.hosting_path);
         //------------------------------------
         //modules used immediately
+        //$vm.url_$A=$vm.hosting_path.replace('cansleep-online-questionnaire','cansleep')
         $vm.module_list={
             //you can add modules here directly
-            "home":	        {url:"$H/0/home.html",router:1},
-            "frame":	    {url:"$H/0/frame.html"},
-            "app":	        {url:"$H/0/app.html"},
-            "header":	    {url:"$H/0/header.html"},
-            "footer":	    {url:"$H/0/footer.html"},
+            "home":	        {url:"$H/m/online-questionnaire-login.html",router:1},
+            "frame":	    {url:"$H/0-oq/frame.html"},
+            "app":	        {url:"$H/0-oq/app.html"},
+            "header":	    {url:"$H/0-oq/header.html"},
+            "footer":	    {url:"$H/0-oq/footer.html"},
         };
         for(p in $vm.module_list) $vm.module_list[p].url=$vm.module_list[p].url.replace('$H',$vm.hosting_path);
         //------------------------------------
