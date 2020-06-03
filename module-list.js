@@ -229,6 +229,12 @@
         "p-stroop-color-quest":	        {url:"$H/m/tasks/stroop-color-quest.html",Table:"91000754",task_name:"Stroop color"},
         "word-pairs-set1-practice":	    {url:"$H/m/word-pairs-set1-p/p.html",task_name:"word-pairs-set1-practice"},
         "word-pairs-set2-practice":	    {url:"$H/m/word-pairs-set2-p/p.html",task_name:"word-pairs-set2-practice"},
+
+        "hads-scoring-01-data":	        {url:"$H/m/tasks/ha_ds-scoring-data.html",Table:"91000871",form_module:"hads-scoring-01-form",quest_module:"hads-scoring"},
+        "hads-scoring-01-form":	        {url:"$H/m/tasks/ha_ds-scoring-form.html",Table:"91000871",task_name:"hads-scoring"},
+        "phq-9-01-data":	            {url:"$H/m/tasks/phq-9-data.html",Table:"91000872",form_module:"phq-9-01-form",quest_module:"phq-9"},
+        "phq-9-01-form":	            {url:"$H/m/tasks/phq-9-form.html",Table:"91000872",task_name:"phq-9"},
+
     }
     //-------------------------------------------------------------------------------------
     for(p in modules){
