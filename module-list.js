@@ -234,6 +234,12 @@
         "hads-scoring-01-form":	        {url:"$H/m/tasks/ha_ds-scoring-form.html",Table:"91000871",task_name:"hads-scoring"},
         "phq-9-01-data":	            {url:"$H/m/tasks/phq-9-data.html",Table:"91000872",form_module:"phq-9-01-form",quest_module:"phq-9"},
         "phq-9-01-form":	            {url:"$H/m/tasks/phq-9-form.html",Table:"91000872",task_name:"phq-9"},
+        //-------------------------------------------------------------------------------------
+        //Flash replacement
+        "n-t1-ft12-data":	            {url:"$H/m/neurocog/finger-tapping12-before-data.html",Table:"91000889",form_module:"n-t1-ft12-form",quest_module:"n-t1-ft12-quest"},
+        "n-t1-ft12-form":	            {url:"$H/m/neurocog/finger-tapping12-before-form.html",Table:"91000889"},
+        "n-t1-ft12-quest":	            {url:"$H/m/neurocog/finger-tapping12-before-quest.html",Table:"91000889",task_name:"ft12"},
+        //-------------------------------------------------------------------------------------
 
     }
     //-------------------------------------------------------------------------------------
