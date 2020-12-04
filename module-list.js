@@ -239,6 +239,9 @@
         "n-t1-ft12-data":	            {url:"$H/m/neurocog/finger-tapping12-before-data.html",Table:"91000889",form_module:"n-t1-ft12-form",quest_module:"n-t1-ft12-quest"},
         "n-t1-ft12-form":	            {url:"$H/m/neurocog/finger-tapping12-before-form.html",Table:"91000889"},
         "n-t1-ft12-quest":	            {url:"$H/m/neurocog/finger-tapping12-before-quest.html",Table:"91000889",task_name:"ft12"},
+        
+        "n-t1-stroop-color-data":	    {url:"$H/m/neurocog/stroop-colour-data.html",Table:"91000664",form_module:"t1-stroop-color-form",quest_module:"n-t1-stroop-color-quest"},
+        "n-t1-stroop-color-quest":	    {url:"$H/m/neurocog/stroop-colour-quest.html",Table:"91000664",task_name:"Stroop color"},
         //-------------------------------------------------------------------------------------
 
     }
