@@ -4,9 +4,10 @@ var intervals = [];
 //------------------------------------
 var this_module=$vm.module_list[$vm.vm['__ID'].name];
 //------------------------------------
+if($vm.online_questionnaire==1) $('#header').hide();
 $('#D__ID').on('load',function(){
-    $('#header').hide();
-    $('#footer').hide();
+    //$('#header').hide();
+    //$('#footer').hide();
     if ($vm.online_questionnaire == 1) $('#participant_div__ID').hide()
     $('#thirdparty_container__ID').css('padding-top','100px');
     $('#thirdparty_container__ID').css('height',$vm.min_height);

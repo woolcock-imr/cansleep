@@ -44,15 +44,15 @@
 		VmInclude:__COMPONENT__/f/form.01.js
 		VmInclude:__CURRENT_PATH__/task-form.js
 		//-------------------------------------
-	if($vm.online_questionnaire==1) $('#header').hide();
+		if($vm.online_questionnaire==1) $('#header').hide();
 		$('body').css('background');
 				var intervals = [];
 		//------------------------------------
 		var this_module=$vm.module_list[$vm.vm['__ID'].name];
 		//------------------------------------
 		$('#D__ID').on('load',function(){
-			$('#header').show();
-			$('#footer').hide();
+			//$('#header').show();
+			//$('#footer').hide();
 			if($vm.online_questionnaire==1) $('#participant_div__ID').hide()
 			$('#thirdparty_container__ID').css('height',$vm.min_height);
 			third_party("thirdparty_container__ID",data_process);
