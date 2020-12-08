@@ -242,6 +242,20 @@
         
         "n-t1-stroop-color-data":	    {url:"$H/m/neurocog/stroop-colour-data.html",Table:"91000664",form_module:"t1-stroop-color-form",quest_module:"n-t1-stroop-color-quest"},
         "n-t1-stroop-color-quest":	    {url:"$H/m/neurocog/stroop-colour-quest.html",Table:"91000664",task_name:"Stroop color"},
+        
+        "n-t1-stroop-text-data":        {url:"$H/m/neurocog/stroop-text-data.html", Table:"91000662", form_module: "t1-stroop-text-form", quest_module: "n-t1-stroop-text-quest" },
+        "n-t1-stroop-text-quest":       {url:"$H/m/neurocog/stroop-text-quest.html", Table:"91000662", task_name: "Stroop text" },
+
+        "n-t1-nback1-data":             {url:"$H/m/neurocog/nback1-data.html",Table:"91000666",form_module:"t1-nback1-form",quest_module:"n-t1-nback1-quest"},
+        "n-t1-nback1-quest":            {url:"$H/m/neurocog/nback1-quest.html",Table:"91000666",task_name:"1-back"},
+
+        "n-t1-nback2-data":             {url:"$H/m/neurocog/nback2-data.html",Table:"91000668",form_module:"t1-nback2-form",quest_module:"n-t1-nback2-quest"},
+        "n-t1-nback2-quest":            {url:"$H/m/neurocog/nback2-quest.html",Table:"91000668",task_name:"2-back"},
+
+        "n-t1-ft6-data":                {url:"$H/m/neurocog/finger-tapping6-after-data.html",Table:"91000660",form_module:"n-t1-ft6-form",quest_module:"n-t1-ft6-quest"},
+        "n-t1-ft6-form":               {url: "$H/m/neurocog/finger-tapping6-after-form.html", Table: "91000660" },
+        "n-t1-ft6-quest":                {url:"$H/m/neurocog/finger-tapping6-after-quest.html",Table:"91000660"},
+
         //-------------------------------------------------------------------------------------
 
     }
