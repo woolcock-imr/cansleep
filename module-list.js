@@ -271,8 +271,8 @@
         "n-t2-stroop-text-data":        {url:"$H/m/neurocog/stroop-text-data.html",Table:"91000663",form_module:"n-t2-stroop-text-form",quest_module:"n-t2-stroop-text-quest"},
         "n-t2-stroop-text-quest":       {url:"$H/m/neurocog/stroop-text-quest.html",Table:"91000663",task_name:"Stroop text"},
 
-        "n-t2-stroop-color-data":       {url:"$H/m/neurocog/stroop-colour-data.html",Table:"91000665", form_module: "n-t2-stroop-colour-form", quest_module: "n-t2-stroop-colour-quest" },
-        "n-t2-stroop-colour-quest":      {url:"$H/m/neurocog/stroop-colour-quest.html",Table:"91000665", task_name: "Stroop colour" },
+        "n-t2-stroop-colour-data":       {url:"$H/m/neurocog/stroop-colour-data.html",Table:"91000665", form_module: "n-t2-stroop-colour-form", quest_module: "n-t2-stroop-colour-quest"},
+        "n-t2-stroop-colour-quest":      {url:"$H/m/neurocog/stroop-colour-quest.html",Table:"91000665", task_name: "Stroop color" },
 
         "n-t2-nback1-data":             {url:"$H/m/neurocog/nback1-data.html",Table:"91000667",form_module:"n-t2-nback1-form",quest_module: "n-t2-nback1-quest"},
         "n-t2-nback1-quest":            {url:"$H/m/neurocog/nback1-quest.html",Table:"91000667",task_name:"1-back" },
