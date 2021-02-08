@@ -280,7 +280,8 @@
         "n-t2-nback2-data":             {url:"$H/m/neurocog/nback2-data.html",Table:"91000669",form_module:"n-t2-nback2-form",quest_module:"n-t2-nback2-quest"},
         "n-t2-nback2-quest":            {url:"$H/m/neurocog/nback2-quest.html", Table:"91000669",task_name:"2-back"},
 
-
+        "adverse-event-symptom-visit-5-data":  {url:"$H/m/tasks/adverse-event-symptom-data.html",Table:"91000890",form_module:"adverse-event-symptom-visit-5-form"},
+        "adverse-event-symptom-visit-5-form":  {url:"$H/m/tasks/adverse-event-symptom-form.html",Table:"91000890"},
         //-------------------------------------------------------------------------------------
 
     }
