@@ -1,0 +1,26 @@
+<div id=D__ID>
+    <section>
+        VmInclude:__COMPONENT__/g/grid.01.html
+    </section>
+    <script>
+        function F__ID(){
+            //-------------------------------------
+            VmInclude:__COMPONENT__/g/grid.01.js
+            VmInclude:__CURRENT_PATH__/task-data.js
+            //-------------------------------------
+            var fields=`
+                Negative_side_effects,
+                Negative_side_effects_describe,
+                Dizziness,Dizziness_date,Dizziness_time,
+                Nausea,Nausea_date,Nausea_time,
+                Fatigue,Fatigue_date,Fatigue_time,
+            `;
+            m.fields="_Form,Status|S3,Notes|NT,Participant_ID|Participant_uid,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+            m.fields_e="Participant_ID|Participant_uid,"+fields
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        VmInclude:__COMPONENT__/g/grid.01.css
+    </style>
+</div>
