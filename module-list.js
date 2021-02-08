@@ -280,8 +280,25 @@
         "n-t2-nback2-data":             {url:"$H/m/neurocog/nback2-data.html",Table:"91000669",form_module:"n-t2-nback2-form",quest_module:"n-t2-nback2-quest"},
         "n-t2-nback2-quest":            {url:"$H/m/neurocog/nback2-quest.html", Table:"91000669",task_name:"2-back"},
 
-        "adverse-event-symptom-visit-5-data":  {url:"$H/m/tasks/adverse-event-symptom-data.html",Table:"91000890",form_module:"adverse-event-symptom-visit-5-form"},
-        "adverse-event-symptom-visit-5-form":  {url:"$H/m/tasks/adverse-event-symptom-form.html",Table:"91000890"},
+        "adverse-event-symptom-data":  {url:"$H/m/tasks/adverse-event-symptom-data.html",Table:"91000890",form_module:"adverse-event-symptom-form"},
+        "adverse-event-symptom-form":  {url:"$H/m/tasks/adverse-event-symptom-form.html",Table:"91000890"},
+
+        "profile-of-mood-states-bl-data":  {url:"$H/m/tasks/profile-of-mood-states-data.html",Table:"91000891",form_module:"profile-of-mood-states-bl-form"},
+        "profile-of-mood-states-bl-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000891"},
+        "profile-of-mood-states-t1-data":  {url:"$H/m/tasks/profile-of-mood-states-data.html",Table:"91000892",form_module:"profile-of-mood-states-t1-form"},
+        "profile-of-mood-states-t1-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000892"},
+        "profile-of-mood-states-t2-data":  {url:"$H/m/tasks/profile-of-mood-states-data.html",Table:"91000893",form_module:"profile-of-mood-states-t2-form"},
+        "profile-of-mood-states-t2-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000893"},
+        "profile-of-mood-states-t3-data":  {url:"$H/m/tasks/profile-of-mood-states-data.html",Table:"91000894",form_module:"profile-of-mood-states-t3-form"},
+        "profile-of-mood-states-t3-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000894"},
+        "profile-of-mood-states-t4-data":  {url:"$H/m/tasks/profile-of-mood-states-data.html",Table:"91000895",form_module:"profile-of-mood-states-t4-form"},
+        "profile-of-mood-states-t4-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000895"},
+        "profile-of-mood-states-t5-data":  {url:"$H/m/tasks/profile-of-mood-states-data.html",Table:"91000896",form_module:"profile-of-mood-states-t5-form"},
+        "profile-of-mood-states-t5-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000896"},
+        "profile-of-mood-states-t6-data":  {url:"$H/m/tasks/profile-of-mood-states-data.html",Table:"91000897",form_module:"profile-of-mood-states-t6-form"},
+        "profile-of-mood-states-t6-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000897"},
+
+        
         //-------------------------------------------------------------------------------------
 
     }
