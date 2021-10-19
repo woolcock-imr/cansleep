@@ -316,6 +316,21 @@
         "profile-of-mood-states-t6-s2-form":  {url:"$H/m/tasks/profile-of-mood-states-form.html",Table:"91000905",task_name:"Profile of mood states"},
         
         //-------------------------------------------------------------------------------------
+		"t1-pvt-data": { url: "$H/m/tasks/pvt-data.html", Table: "91000910", form_module: "t1-pvt-form" },
+		"t1-pvt-form": { url: "$H/m/tasks/pvt-form.html", Table: "91000910"},
+		"t2-pvt-data": { url: "$H/m/tasks/pvt-data.html", Table: "91000911", form_module: "t2-pvt-form" },
+		"t2-pvt-form": { url: "$H/m/tasks/pvt-form.html", Table: "91000911" },
+		"t1-sdeq-data": { url: "$H/m/tasks/sdeq-data.html", Table: "91000912", form_module: "t1-sdeq-form" },
+		"t1-sdeq-form": { url: "$H/m/tasks/sdeq-form.html", Table: "91000912" },
+		"t2-sdeq-data": { url: "$H/m/tasks/sdeq-data.html", Table: "91000913", form_module: "t2-sdeq-form" },
+		"t2-sdeq-form": { url: "$H/m/tasks/sdeq-form.html", Table: "91000913" },
+
+// t1-pvt - 91000910
+// t2-pvt -91000911
+// t1-sdeq - 91000912
+// t2-sdeq - 91000913
+
+
 
     }
     //-------------------------------------------------------------------------------------

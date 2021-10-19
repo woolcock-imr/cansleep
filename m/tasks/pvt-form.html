@@ -1,0 +1,204 @@
+<div id=D__ID>
+    <section id=form_container__ID>
+        <div id=header__ID>
+        </div>
+        <form id=F__ID>
+            <div class="container">
+                <!-- participant part for all tsak forms -------------------->
+                <div class="row row__ID" id=row_participant__ID>
+                    <div class="col-sm-12 col-lg-9 input__ID">
+                        <span class=label__ID>Participant</span><br>
+                        <input type=text name="Participant" class=form-control id=Participant__ID
+                            data-id="Participant" />
+                    </div>
+                    <div class="col-sm-12 col-lg-3 input__ID">
+                        <span class=label__ID>Participant ID</span><br>
+                        <input type=text name="Participant_uid" class=form-control readonly />
+                    </div>
+                    <hr style="border-top: 1px solid #888;width: 100%;margin:10px 0">
+                </div>
+				<div class="row">
+					<div class=col>
+					<span class=label__ID>Timepoint</span><br>
+						<select name="Timepoint">
+						<option defaultvalue></option>
+						<option value="0">Baseline</option>
+						<option value="1">Treatment 1 </option>
+						<option value="2">Treatment 2</option>
+						</select>
+					</div>
+				</div><br>
+                <!---------------------------------------------------->
+
+                <!-- Form Inputs-------------------------------------->
+                
+                <br>
+                <div class="row">
+                    <div class=col>
+                        <button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </div><br>
+                <input name=file_name type=file /><br><br>
+                <div id=dynamic_part__ID></div>
+                <!---------------------------------------------------->
+
+
+                <!-- submit button part for all tsak forms------------>
+                <br>
+                <div class="row">
+                    <div class=col>
+                        <button id=submit__ID type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+                </div>
+                <!---------------------------------------------------->
+            </div>
+        </form>
+    </section>
+        VmInclude:__COMPONENT__/m/model.01.html
+    <script>
+        function F__ID() {
+            //-------------------------------------
+            var fields = "PVT_File_Name,PVT_Subject_ID,PVT_Trial_No,PVT_Trial_Date_Time,PVT_Study,PVT_Subj_Initials,PVT_Exp_Initials,PVT_ISIMin,PVT_ISIMax,PVT_HandUsed,PVT_TotalLength,PVT_PreVAS,PVT_PostVAS,PVT_GoodRs,PVT_MeanRT,PVT_SDRT,PVT_MedianRT,PVT_MinRT,PVT_MaxRT,PVT_MeanRRT,PVT_SDRRT,PVT_Lapses,PVT_Lap,PVT_TotalErrors,PVT_RTLess100,PVT_WrongKey,PVT_FalseStartsCorrKey,PVT_FalseStartsInCorrKey,PVT_KeyHeld,PVT_NoR30sec,PVT_DistribAsym,PVT_MeanFRT,PVT_SDFRT,PVT_MeanFRRT,PVT_MeanSDFRRT,PVT_MeanSRT,PVT_SDSRT,PVT_MeanSRRT,PVT_SDSRRT,PVT_RRTSlope,PVT_RRTIntcpt,PVT_RRTR2,PVT_CiSlope,PVT_STdErrOfLine,PVT_tVsZeroSlope,PVT_PercentChange";
+            $('#header__ID').text("Form Name");
+            //-------------------------------------
+            var fs = fields.split(',');
+            var txt = "";
+            for (var i = 0; i < fs.length; i++) {
+                txt += "<div class='row row__ID'><div class='col'>\r\n";
+                txt += "<span>" + fs[i] + "</span><input type=text class=form-control name=" + fs[i] + ">\r\n";
+                txt += "</div></div>\r\n";
+            }
+            $('#dynamic_part__ID').html(txt);
+            //-------------------------------------
+            VmInclude:__COMPONENT__/f/form.01.js
+            VmInclude:__CURRENT_PATH__/task-form.js
+
+            
+            //-------------------------------------
+                $('#F__ID').find('input[type=file]').on('change', function (evt) {
+                var file = this.files[0];
+                $('#F__ID').find("input[name='PVT_File_Name']").val(file.name);
+                read_file(file);
+            });
+
+
+            var read_file = function (file) {
+                var reader = new FileReader();
+                reader.onload = (function (e) {
+                    var contents = e.target.result;
+                    var lines = contents.replace(/"/g, '').replace(/\r/, '\n').replace(/\n\n/, '\n').replace(/\t/g, ',').split('\n');
+                    if (lines.length >= 2) {
+                        var header = lines[0].split(',');
+                        var row = lines[1].split(',');
+                        for (i = 0; i < header.length; i++) {
+                            switch (header[i]) {
+                                case "Subject ID": $('#F__ID').find("input[name='PVT_Subject_ID']").val(row[i]); break;
+                                case "Trial No.": $('#F__ID').find("input[name='PVT_Trial_No']").val(row[i]); break;
+                                case "Trial Date_Time": $('#F__ID').find("input[name='PVT_Trial_Date_Time']").val(row[i]); break;
+                                case "Study": $('#F__ID').find("input[name='PVT_Study']").val(row[i]); break;
+                                case "Subj. Initials": $('#F__ID').find("input[name='PVT_Subj_Initials']").val(row[i]); break;
+                                case "Exp. Initials": $('#F__ID').find("input[name='PVT_Exp_Initials']").val(row[i]); break;
+                                case "ISI Minimum": $('#F__ID').find("input[name='PVT_ISIMin']").val(row[i]); break;
+                                case "ISI Maximum": $('#F__ID').find("input[name='PVT_ISIMax']").val(row[i]); break;
+                                case "Hand": $('#F__ID').find("input[name='PVT_HandUsed']").val(row[i]); break;
+                                case "Trial Length": $('#F__ID').find("input[name='PVT_TotalLength']").val(row[i]); break;
+                                case "Sleepy Pre": $('#F__ID').find("input[name='PVT_PreVAS']").val(row[i]); break;
+                                case "Sleepy Post": $('#F__ID').find("input[name='PVT_PostVAS']").val(row[i]); break;
+                                case "Good R's": $('#F__ID').find("input[name='PVT_GoodRs']").val(row[i]); break;
+                                case "Mean RT": $('#F__ID').find("input[name='PVT_MeanRT']").val(row[i]); break;
+                                case "SD RT": $('#F__ID').find("input[name='PVT_SDRT']").val(row[i]); break;
+                                case "Median RT": $('#F__ID').find("input[name='PVT_MedianRT']").val(row[i]); break;
+                                case "Minimum RT": $('#F__ID').find("input[name='PVT_MinRT']").val(row[i]); break;
+                                case "Maximum RT": $('#F__ID').find("input[name='PVT_MaxRT']").val(row[i]); break;
+                                case "Mean RRT": $('#F__ID').find("input[name='PVT_MeanRRT']").val(row[i]); break;
+                                case "SD RRT": $('#F__ID').find("input[name='PVT_SDRRT']").val(row[i]); break;
+                                case "Lapses (RT > 500ms)": $('#F__ID').find("input[name='PVT_Lapses']").val(row[i]); break;
+                                case "Lap (SQR XFRM)": $('#F__ID').find("input[name='PVT_Lap']").val(row[i]); break;
+                                case "Total Errors": $('#F__ID').find("input[name='PVT_TotalErrors']").val(row[i]); break;
+                                case "RT < 100 ms": $('#F__ID').find("input[name='PVT_RTLess100']").val(row[i]); break;
+                                case "Wrong key R's": $('#F__ID').find("input[name='PVT_WrongKey']").val(row[i]); break;
+                                case "False Starts (c)": $('#F__ID').find("input[name='PVT_FalseStartsCorrKey']").val(row[i]); break;
+                                case "False Starts (e)": $('#F__ID').find("input[name='PVT_FalseStartsInCorrKey']").val(row[i]); break;
+                                case "Key Held > 3 s": $('#F__ID').find("input[name='PVT_KeyHeld']").val(row[i]); break;
+                                case "No R for 30s": $('#F__ID').find("input[name='PVT_NoR30sec']").val(row[i]); break;
+                                case "Distrib. Asym.": $('#F__ID').find("input[name='PVT_DistribAsym']").val(row[i]); break;
+                                case "Mean F RT": $('#F__ID').find("input[name='PVT_MeanFRT']").val(row[i]); break;
+                                case "SD F RT": $('#F__ID').find("input[name='PVT_SDFRT']").val(row[i]); break;
+                                case "Mean F RRT": $('#F__ID').find("input[name='PVT_MeanFRRT']").val(row[i]); break;
+                                case "SD F RRT": $('#F__ID').find("input[name='PVT_MeanSDFRRT']").val(row[i]); break;
+                                case "Mean S RT": $('#F__ID').find("input[name='PVT_MeanSRT']").val(row[i]); break;
+                                case "SD S RT": $('#F__ID').find("input[name='PVT_SDSRT']").val(row[i]); break;
+                                case "Mean S RRT": $('#F__ID').find("input[name='PVT_MeanSRRT']").val(row[i]); break;
+                                case "SD S RRT": $('#F__ID').find("input[name='PVT_SDSRRT']").val(row[i]); break;
+                                case "RRT Slope": $('#F__ID').find("input[name='PVT_RRTSlope']").val(row[i]); break;
+                                case "RRT Intcpt": $('#F__ID').find("input[name='PVT_RRTIntcpt']").val(row[i]); break;
+                                case "RRT R2": $('#F__ID').find("input[name='PVT_RRTR2']").val(row[i]); break;
+                                case "Ci of Slope": $('#F__ID').find("input[name='PVT_CiSlope']").val(row[i]); break;
+                                case "Std Err of Line": $('#F__ID').find("input[name='PVT_STdErrOfLine']").val(row[i]); break;
+                                case "t vs Zero Slope": $('#F__ID').find("input[name='PVT_tVsZeroSlope']").val(row[i]); break;
+                                case "% Change": $('#F__ID').find("input[name='PVT_PercentChange']").val(row[i]); break;
+
+                            }
+
+                        }
+                    }
+                })
+                reader.readAsText(file);
+            };
+            //-------------------------------------
+        }
+    </script>
+    <style>
+        #D__ID {
+            height: 100%;
+            overflow: auto;
+            animation: vm_module_fadein 1.0s;
+            background-color: #fff;
+        }
+
+        #form_container__ID {
+            margin-top: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Verdana, sans-serif;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        #F__ID {
+            border: 1px solid #bbb;
+            border-top-width: 0;
+            padding: 6px 15px 20px 15px;
+        }
+
+        #header__ID {
+            background-color: #727b84;
+            color: #fff;
+            padding: 10px 15px 10px 15px;
+            font-size: 120%;
+            border: 1px solid #bbb;
+            border-bottom-width: 0;
+        }
+
+        .row__ID {
+            padding: 6px 0;
+        }
+
+        .row__ID:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .row__ID span {
+            font-weight: bold;
+            display: inline-block;
+            padding: 5px 0;
+        }
+
+        @media screen and (max-width:768px) {
+            #form_container__ID {
+                padding: 20px 10px 50px 10px;
+            }
+        }
+    </style>
+</div>

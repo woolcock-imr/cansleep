@@ -10,8 +10,8 @@
             $('#title__ID').text('Finger Tapping Task')
             //-------------------------------------
             var fields="Correct_1,Correct_2,Correct_3,Correct_4,Correct_5,Correct_6,Error_1,Error_2,Error_3,Error_4,Error_5,Error_6,Time_1,Time_2,Time_3,Time_4,Time_5,Time_6,ERLS,LRLS,ERES,LRES,ERRT,LRRT,OEI,OLI,Tapping_Time,Match,Sequence_Number,OLDVAR,Speed_1,Speed_2,Speed_3,Speed_4,Speed_5,Speed_6,Accuracy_1,Accuracy_2,Accuracy_3,Accuracy_4,Accuracy_1,Accuracy_6";
-            m.fields="_Form,Status|S3,Notes|NT,Participant_ID|Participant_uid,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
-            m.fields_e="Participant_ID,"+fields;
+            m.fields="_Form,Status|S3,Notes|NT,Participant_ID|Participant_uid,Randomisation_Number,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
+            m.fields_e="Participant_uid,Randomisation_Number,"+fields;
         //-------------------------------------
         m.new=function(){
           if(m.form_module!=undefined){

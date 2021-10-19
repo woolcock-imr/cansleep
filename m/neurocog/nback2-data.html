@@ -11,8 +11,8 @@
         //-------------------------------------
 		var fields="NBACK,NGTA,NGRT,GMRT,NTCR,NTIC,NMIS,NMRT,MRTCM,MRTCN,SDCR,SDCM,SDCN,MdRTCR,MdRTCM,MnRTCR,MxRTCR,MF10CR,MS10CR,SDF10CR,SDS10CR,NTCM,NTCN,NTFM,NTFN,NTWR,NNO,NRT,NAC";
         //m.fields="_Status,_Notes,_Participant_ID,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
-        m.fields="_Form,Status|S3,Notes|NT,Participant_ID|Participant_uid,Participant,"+fields+",Submit_date,Submitted_by,_Delete";
-        m.fields_e="Participant_ID,"+fields;
+        m.fields="_Form,Status|S3,Notes|NT,Participant_ID|Participant_uid,Participant,Randomisation_Number,"+fields+",Submit_date,Submitted_by,_Delete";
+        m.fields_e="Participant_uid,Randomisation_Number,"+fields;
 
         //-------------------------------------
            m.new=function(){

@@ -14,11 +14,9 @@ m.set_req=function(){
         participant_where=" where uid="+participant_uid;
     }
     var sql="with notes as (select PUID,NT=S1,NC=S2,NRowNum=row_number() over (PARTITION BY PUID order by ID DESC) from [FORM-"+notes_pid+"] where ppid="+m.Table+")";
-    sql+=",participant as (select V1, ParticipantUID=UID from [FORM-"+participant_pid+"] "+participant_where+" )";
-    sql+=",task as (select ID, Randomisation_Number=participant.V1, PID,UID,PUID,S3,Information,DateTime,Author,RowNum=row_number() over (order by ID DESC) from [FORM-"+m.Table+"-@S1] join participant on PUID=ParticipantUID)";
-    sql+="select ID,Randomisation_Number,S3,PID,UID,Information,Submit_date=DateTime,Submitted_by=Author,RowNum,NT,NC from task left join notes on UID=notes.PUID and NRowNum=1 where RowNum between @I6 and @I7";
-    
-    
+    sql+=",participant as (select ParticipantUID=UID from [FORM-"+participant_pid+"] "+participant_where+" )";
+    sql+=",task as (select ID,PID,UID,PUID,S3,Information,DateTime,Author,RowNum=row_number() over (order by ID DESC) from [FORM-"+m.Table+"-@S1] join participant on PUID=ParticipantUID)";
+    sql+="select ID,S3,PID,UID,Information,Submit_date=DateTime,Submitted_by=Author,RowNum,NT,NC from task left join notes on UID=notes.PUID and NRowNum=1 where RowNum between @I6 and @I7";
     var sql_n="with participant as (select ParticipantUID=UID from [FORM-"+participant_pid+"] )";
     sql_n+=" select count(ID) from [FORM-"+m.Table+"-@S1] join participant on PUID=ParticipantUID";
 
@@ -27,9 +25,9 @@ m.set_req=function(){
 //-------------------------------------
 m.set_req_export=function(i1,i2){
     //m.fields_e=m.form_fields;
-    var sql="with participant as (select ParticipantUID=UID, V1 from [FORM-"+participant_pid+"] )";
+    var sql="with participant as (select ParticipantUID=UID from [FORM-"+participant_pid+"] )";
     sql+=",task as (select ID,UID,PUID,S3,Information,DateTime,Author from [FORM-"+m.Table+"-@S1])";
-    sql+=",records as (select ID,Randomisation_Number=participant.V1,ParticipantUID,Information,DateTime,Author,RowNum=row_number() over (order by ID DESC) from participant left join task on PUID=ParticipantUID)";
+    sql+=",records as (select ID,ParticipantUID,Information,DateTime,Author,RowNum=row_number() over (order by ID DESC) from participant left join task on PUID=ParticipantUID)";
 	sql+=" select * from records where RowNum between @I1 and @I2";
     m.req={cmd:'read',qid:m.qid,sql:sql,i1:i1,i2:i2}
 }
