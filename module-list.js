@@ -324,11 +324,10 @@
 		"t1-sdeq-form": { url: "$H/m/tasks/sdeq-form.html", Table: "91000912" },
 		"t2-sdeq-data": { url: "$H/m/tasks/sdeq-data.html", Table: "91000913", form_module: "t2-sdeq-form" },
 		"t2-sdeq-form": { url: "$H/m/tasks/sdeq-form.html", Table: "91000913" },
+		"psg-report-data": { url: "$H/m/tasks/psg_report.html", Table: "91000914", form_module: "psg-report-form" },
+		"psg-report-form": { url: "$H/m/tasks/psg_report-form.html", Table: "91000914" },
 
-// t1-pvt - 91000910
-// t2-pvt -91000911
-// t1-sdeq - 91000912
-// t2-sdeq - 91000913
+
 
 
 
